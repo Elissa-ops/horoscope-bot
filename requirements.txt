@@ -1,6 +1,4 @@
-flask
-line-bot-sdk
-beautifulsoup4
-requests
+Flask
 python-dotenv
+line-bot-sdk==2.4.1
 google-generativeai
