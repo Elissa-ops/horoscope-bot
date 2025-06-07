@@ -112,4 +112,5 @@ def handle_message(event):
 
 if __name__ == "__main__":
     print("🚀 啟動 Horoscope Bot Flask 伺服器中...")
-    app.run(debug=True, host="127.0.0.1", port=3000)
+    port = int(os.environ.get("PORT", 5000))  # Render 會給你一個 PORT
+    app.run(debug=True, host="0.0.0.0", port=port)  # ✅ 正確：開放給 Render 外部監聽
